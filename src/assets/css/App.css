@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #15141f;
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  color: white;
+  padding: 9vh 5vw;
+}
+
+#root {
+  width: 100vw;
+}
+
+.main-title {
+  display: flex;
+  width: 100%;
+  font-size: 60px;
+  text-align: left;
+  margin-bottom: 7vh;
+  font-weight: 350;
+}
+.main-title .color-orange {
+  color: #fa674d;
+}
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 40px;
+  }
+}
+
+.spotlight {
+  height: 50vh;
+  border-radius: 35px;
+  display: flex;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 7vh;
+}
+@media screen and (min-width: 768px) {
+  .spotlight {
+    height: 60vh;
+  }
+}
+.spotlight .trailer-launch {
+  height: 30%;
+  width: 50%;
+  max-width: 500px;
+  min-width: 300px;
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 0px 2px;
+  border-radius: 35px;
+  backdrop-filter: blur(6px);
+  justify-content: center;
+}
+.spotlight .trailer-launch .play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.spotlight .trailer-launch .play-button img {
+  width: 60px;
+  height: 60px;
+}
+.spotlight .trailer-launch .play-button img:hover {
+  cursor: pointer;
+  transform: scale(105%);
+  transition: ease 0.4s;
+}
+.spotlight .trailer-launch .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.spotlight .trailer-launch .info .text {
+  font-size: 20px;
+  color: #bdbdbd;
+}
+@media screen and (max-width: 768px) {
+  .spotlight .trailer-launch .info .text {
+    font-size: 18px;
+  }
+}
+.spotlight .trailer-launch .info .title {
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .spotlight .trailer-launch .info .title {
+    font-size: 20px;
+  }
+}
+
+.trending .carousel {
+  display: flex;
+  gap: 2vw;
+  width: 90vw;
+  overflow-x: scroll;
+}
+.trending .carousel .movie-card {
+  height: 350px;
+  min-width: 240px;
+  border-radius: 35px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+.trending .carousel .movie-card > * {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: rgba(255, 255, 255, 0.45) 0px 0px 0px 2px;
+}
+.trending .carousel .movie-card .rating {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  height: 18%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.trending .carousel .movie-card .rating .imdbRate {
+  font-size: 13px;
+  text-align: left;
+  width: 80%;
+  margin-bottom: 8px;
+}
+.trending .carousel .movie-card .rating .rate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  font-size: 25px;
+}
+.trending .carousel .movie-card .title {
+  position: absolute;
+  height: 60px;
+  bottom: 5%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=App.css.map */

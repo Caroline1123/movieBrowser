@@ -1,10 +1,12 @@
 // import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
-import "./App.css";
+import "./assets/css/App.css";
+import HomePage from "./components/Homepage/HomePage.tsx";
 
-function App() {
-  return <>Hello World!</>;
-}
+const App = () => {
+  return(
+    <HomePage />)
+};
 
 export default App;

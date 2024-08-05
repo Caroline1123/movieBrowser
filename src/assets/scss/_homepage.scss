@@ -1,0 +1,138 @@
+.main-title {
+    display:flex;
+    width: 100%;
+    font-size: 60px;
+    text-align:left;
+    margin-bottom: 7vh;
+    font-weight: 350;
+    .color-orange{
+        color: #fa674d;
+    }
+    @include mobile {
+        font-size: 40px;
+    }
+}
+
+.spotlight {
+    height: 50vh;
+    border-radius: 35px;
+    display:flex;
+    position: relative;
+    background-size:cover;
+    background-position: center;
+    margin-bottom:7vh;
+    @include desktop {
+        height: 60vh;
+    }
+    .trailer-launch {
+        height: 30%;
+        width:50%;
+        max-width: 500px;
+        min-width: 300px;
+        position:absolute;
+        bottom: 20px;
+        left: 15px;
+        display: flex;
+        background-color:rgba(255,255,255,0.2);
+        box-shadow: rgba(255,255,255,0.25) 0px 0px 0px 2px;
+        border-radius: 35px;
+        backdrop-filter: blur(6px);
+        justify-content:center;
+        .play-button {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width: 30%;
+            img {
+                width: 60px;
+                height: 60px;
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(105%);
+                    transition: ease 0.4s;
+                }
+            }
+        }
+        .info {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 70%;
+            .text {
+                font-size: 20px;
+                color:#bdbdbd;
+                @include mobile {
+                    font-size: 18px;
+                }
+            }
+            .title {
+                font-size: 30px;
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.trending {
+    .carousel {
+        display:flex;
+        gap: 2vw;
+        width: 90vw;
+        overflow-x: scroll;
+        .movie-card {
+            height: 350px;
+            min-width: 240px;
+            border-radius: 35px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            & > * {
+                border-radius: 20px;
+                background-color:rgba(255,255,255,0.4);
+                box-shadow: rgba(255,255,255,0.45) 0px 0px 0px 2px;
+            }
+            .rating {
+                display:flex;
+                flex-direction: column;
+                position: absolute;
+                top: 17px;
+                right: 17px;
+                height: 18%;
+                width: 35%;
+                display:flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+                font-size: 16px;
+                .imdbRate {
+                    font-size: 13px;
+                    text-align: left;
+                    width: 80%;
+                    margin-bottom:8px;
+                }
+                .rate {
+                    display: flex;
+                    align-items:center;
+                    justify-content: space-between;
+                    width: 80%;
+                    font-size: 25px;
+                }
+            }
+            .title {
+                position: absolute;
+                height: 60px;
+                bottom: 5%;
+                width: 90%;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                
+            }
+    
+        }
+    }
+}
