@@ -81,6 +81,7 @@
         gap: 2vw;
         width: 90vw;
         overflow-x: scroll;
+        
         .movie-card {
             height: 350px;
             min-width: 240px;
@@ -92,7 +93,7 @@
             background-position: center;
             & > * {
                 border-radius: 20px;
-                background-color:rgba(255,255,255,0.4);
+                background-color:rgba(255,255,255,0.5);
                 box-shadow: rgba(255,255,255,0.45) 0px 0px 0px 2px;
             }
             .rating {
@@ -130,7 +131,7 @@
                 display:flex;
                 align-items:center;
                 justify-content:center;
-                
+                text-align: center;
             }
     
         }

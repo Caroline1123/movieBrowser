@@ -1,0 +1,18 @@
+nav > ul {
+    display:flex;
+    justify-content: space-between;
+    padding: 0 10vw;
+    margin-top: 6vh;
+    li img {
+        width: 55px;
+        height: 55px;
+    }
+    &> *:hover {
+        cursor: pointer;
+        transform: scale(108%);
+        transition: ease 0.4s
+    }
+    .active {
+        filter: invert(67%) sepia(72%) saturate(1987%) hue-rotate(317deg) brightness(111%) contrast(115%);
+    }
+}
