@@ -9,10 +9,35 @@ body {
     justify-content: center;
     font-family: "Inter", sans-serif;
     color:white;
-    padding: 9vh 5vw;
+    position: relative;
 }
 
 #root {
     width : 100vw;
-    
+    max-width : 100vw;
+}
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+    width: 8px;  /* Adjust width as necessary */
+}
+
+::-webkit-scrollbar-track {
+    background: black;  /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;  /* Color of the scrollbar thumb */
+    border-radius: 4px;  /* Rounded corners for the scrollbar thumb */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;  /* Makes the scrollbar thinner */
+    scrollbar-color: #444 black;  /* thumb color and track color */
+}
+
+/* For Internet Explorer and Edge */
+body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;  /* Auto-hides scrollbar when not in use */
 }

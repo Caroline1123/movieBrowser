@@ -1,10 +1,11 @@
-import {Title} from "./../Homepage/Title"
+// import {Title} from "./../Homepage/Title"
 
-const Searchpage = () => {
+// const Searchpage = () => {
 
+//     return (
 
-    return (
+//         <Title />
+//     )
+// }
 
-        <Title />
-    )
-}
+// export default Searchpage

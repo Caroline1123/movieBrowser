@@ -1,10 +1,14 @@
+
+
+
+
 .main-title {
     display:flex;
-    width: 100%;
+    max-width : 100vw;
     font-size: 60px;
     text-align:left;
-    margin-bottom: 7vh;
     font-weight: 350;
+    padding: 9vh 5vw;
     .color-orange{
         color: #fa674d;
     }
@@ -20,7 +24,7 @@
     position: relative;
     background-size:cover;
     background-position: center;
-    margin-bottom:7vh;
+    margin: 0 5vw;
     @include desktop {
         height: 60vh;
     }
@@ -76,64 +80,88 @@
 }
 
 .trending {
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow:hidden;
     .carousel {
-        display:flex;
-        gap: 2vw;
-        width: 90vw;
+        max-width: 98vw;
+        box-sizing: border-box;
+        display: flex;
+        gap: 3vw;
         overflow-x: scroll;
-        
+        box-sizing:border-box;
         .movie-card {
             height: 350px;
             min-width: 240px;
             border-radius: 35px;
             position: relative;
             display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
             background-size: cover;
             background-position: center;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            &:hover {
+                transform: scale(1.05);
+            }
             & > * {
                 border-radius: 20px;
-                background-color:rgba(255,255,255,0.5);
-                box-shadow: rgba(255,255,255,0.45) 0px 0px 0px 2px;
+                background-color: rgba(255, 255, 255, 0.5);
+                box-shadow: rgba(255, 255, 255, 0.45) 0px 0px 0px 2px;
             }
+
             .rating {
-                display:flex;
+                display: flex;
                 flex-direction: column;
                 position: absolute;
                 top: 17px;
                 right: 17px;
                 height: 18%;
                 width: 35%;
-                display:flex;
-                flex-direction: column;
-                justify-content:center;
+                justify-content: center;
                 align-items: center;
                 font-size: 16px;
+
                 .imdbRate {
                     font-size: 13px;
                     text-align: left;
                     width: 80%;
-                    margin-bottom:8px;
+                    margin-bottom: 8px;
                 }
+
                 .rate {
                     display: flex;
-                    align-items:center;
+                    align-items: center;
                     justify-content: space-between;
                     width: 80%;
                     font-size: 25px;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 5px;
+                    }
                 }
             }
+
             .title {
                 position: absolute;
-                height: 60px;
                 bottom: 5%;
                 width: 90%;
-                display:flex;
-                align-items:center;
-                justify-content:center;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 text-align: center;
+                font-size: 1.2em;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border-radius: 10px;
+                padding: 5px;
             }
-    
         }
     }
 }
